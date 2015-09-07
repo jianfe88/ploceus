@@ -2,7 +2,7 @@
 /*hoarding (Valla Publicitaria)*/
 /********************************************/
 .hoarding{
-	background-color: #fff;
+	/*background-color: #fff;*/
 	background-image: url(../../img/hoarding.png);
 	background-position: center 100%;
 	background-repeat: no-repeat;
