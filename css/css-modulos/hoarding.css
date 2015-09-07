@@ -1,0 +1,90 @@
+/********************************************/
+/*hoarding (Valla Publicitaria)*/
+/********************************************/
+.hoarding{
+	background-color: #fff;
+	background-image: url(../../img/hoarding.png);
+	background-position: center 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 75px 16px 60px 16px;
+	text-align: center;
+	height: 100vh;
+}
+
+.hoarding h1{
+	color: #000;
+	font-family: 'robotoblack', sans-serif;
+	font-size: 9vw;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px rgb(80, 80, 80);
+}
+
+/*Media Querys********************/
+/*===============================*/
+@media (min-width: 475px){
+	.hoarding{
+		background-size: 60%;
+		
+	}
+}
+
+@media (min-width: 939px){
+	.hoarding{
+		background-size: 50%;
+		background-position: right 100px;
+	}
+	.hoarding h1{
+		font-size: 6vw;
+		width: 50%;
+		margin-top: 30px;
+	}
+}
+
+@media (min-width: 1200px){
+	.hoarding{
+		background-size: 40%;
+		background-position: 90% 100px;
+	}
+	.hoarding h1{
+		width: 60%;
+	}
+}
+
+@media (min-width: 2400px){
+	.hoarding{
+		background-size: 50%;
+	}
+	.hoarding h1{
+		font-size: 7vw;
+		width: 70%;
+	}
+}
+
+/*Especial para el ios<7 que no reconoce vh ó vw*/
+/*ipad*/
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  .hoarding{
+		background-size: 80%;
+		background-position: center 90%;
+		height: 925px;
+	}
+
+  .hoarding h1 {
+  	padding-top: 2rem;
+    font-size: 4.3rem;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  .hoarding h1 {
+    font-size: 2.8rem;
+  }
+}
+/*iphone 4*/
+@media all and (device-width: 320px) and (device-height: 480px) and (orientation:portrait){
+  .hoarding{
+		height: 480px;
+	}
+
+}

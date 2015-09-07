@@ -1,0 +1,27 @@
+/* Hoja de estilos del area de contacto*/
+.contact{
+	background-color: #0A927A;
+	/*padding-top: 20px;*/
+}
+.contact-list{
+	list-style: none;
+	text-align: center;
+}
+.contact-list li{
+	text-align: center;
+}
+.contact-list img{
+	width:80%;
+	min-width: 250px;
+	height: auto;
+}
+
+
+@media (min-width: 650px) {
+	.contact-list li{
+		display:inline-block;
+		width: 50%;
+		/*max-width: 500px;*/
+	}
+
+}

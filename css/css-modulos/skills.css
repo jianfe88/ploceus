@@ -1,0 +1,87 @@
+/********************************************/
+/*skills (Tecnologías y herramientas)*/
+/********************************************/
+.skills{
+	/*background-color: #C2FFE3; */
+	/*padding-top: 20px;*/
+	padding-bottom: 20px;
+}
+.skills h2{
+	/*padding-top: 20px;*/
+}
+.skills ul{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding: 0;
+}	
+
+.skills li{
+	/*background-color: red;*/
+	display: inline-block;
+	flex-grown:1;
+	height: auto;
+	margin-bottom: 5px;
+	position: relative;
+	text-align: center;
+	width: 24%;
+}
+
+.skills li span{
+	display: block;
+}
+
+.skills li img{
+	height: auto;
+	margin:5%;
+	width: 90%;
+}
+
+progress[value] {
+  /* Elimino la apariencia por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+   
+  /* Quito el borde que aparece en Firefox */
+  border: none;
+
+  /* Añado mis propios estilos */
+  width: 80%;
+  height: .5rem;
+  overflow:hidden;
+  background-color: #098C75;
+   
+	/*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+  /*border:1px inset #666;*/
+  border-radius : 1rem ;
+
+  /* Aplicamos color a la barra */
+	color: #0ee018;
+}
+
+/* Compatibilidad de color en Firefox y Chrome */
+progress::-moz-progress-bar { background: #1BFF8A; }
+progress::-webkit-progress-bar { background: #098C75; }
+progress::-webkit-progress-value { background: #0ee018; }
+
+
+
+/*Media Querys********************/
+/*===============================*/
+@media (min-width: 939px){
+
+}
+
+@media (min-width: 1020px){
+	.skills li{
+		width: 16.2%;
+		padding: 3%;
+	}
+}
+
+@media (min-width: 1200px){
+
+}
+

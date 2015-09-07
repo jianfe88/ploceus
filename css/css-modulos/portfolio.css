@@ -1,0 +1,92 @@
+/*Nuevo diseño*/
+.portfolio{
+    background-color: #fff;
+    /*padding-top: 20px;*/
+}
+.portfolio-wrapper{
+    display: flex;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    margin: 0 auto;
+}
+.portfolio-block{
+    position:relative;
+    width: 100%;
+    padding: 3%;
+}
+
+.portfolio-holder img {
+    display: block;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.portfolio-hover{
+    background: rgba(10, 146, 122, 1);
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 5;
+
+    border-radius: 15px;
+
+    -webkit-transition: opacity 600ms ease 0;
+    -moz-transition: opacity 600ms ease 0;
+    transition: opacity 600ms ease 0;
+    -ms-filter: "alpha(opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.portfolio-hover:hover{
+	opacity: 1;
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-title {
+    font-weight: bold;
+    margin-bottom: 7px;
+    padding: 0 25px 0 25px;
+}
+
+.portfolio-description {
+    display: block;
+    padding: 0 25px 0 25px;
+}
+
+
+
+/*Media Querys********************/
+/*===============================*/
+@media (min-width: 475px){
+	
+}
+
+@media (min-width: 650px){
+	.portfolio-block{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1020px){
+    .portfolio-block{
+        width: 33%;
+    }
+
+}
+
