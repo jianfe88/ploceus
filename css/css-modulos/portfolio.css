@@ -1,19 +1,23 @@
-/*Nuevo diseño*/
-.portfolio{
-    /*background-color: #fff;*/
-    /*padding-top: 20px;*/
+/*Maquetado area de portafolio*/
+.portfolio h2{
+    margin-bottom: .5rem;
 }
+
 .portfolio-wrapper{
     display: flex;
-    align-items:flex-start;
+    flex-direction:row;
     flex-wrap:wrap;
-    justify-content:flex-start;
+    justify-content:space-between;
     margin: 0 auto;
+    padding: 0;
 }
+
 .portfolio-block{
+    display: inline-block;
+    margin-bottom: .5rem;
     position:relative;
     width: 100%;
-    padding: 3%;
+    padding: 2%;
 }
 
 .portfolio-holder img {
@@ -22,11 +26,12 @@
     margin: 0;
     max-width: 100%;
     width: 100%;
+
 }
 
 
 .portfolio-hover{
-    background: rgba(10, 146, 122, 1);
+    background: #393E54;
     bottom: 0;
     cursor: pointer;
     display: block;
@@ -39,18 +44,17 @@
     z-index: 5;
 
     border-radius: 15px;
-
-    -webkit-transition: opacity 600ms ease 0;
-    -moz-transition: opacity 600ms ease 0;
-    transition: opacity 600ms ease 0;
-    -ms-filter: "alpha(opacity=0)";
-    filter: alpha(opacity=0);
+    -webkit-transition: opacity 1.5s ease;
+    transition: opacity 1.5s ease;
 }
 
 .portfolio-hover:hover{
-	opacity: 1;
+    opacity: 1;
 }
-
+.portfolio a{
+    color: #fff;
+}
+    
 .portfolio-info {
     position: absolute;
     bottom: 35%;
@@ -70,7 +74,6 @@
 }
 
 
-
 /*Media Querys********************/
 /*===============================*/
 @media (min-width: 475px){
@@ -79,13 +82,14 @@
 
 @media (min-width: 650px){
 	.portfolio-block{
-        width: 50%;
+        width: 49%;
+
     }
 }
 
 @media (min-width: 1020px){
     .portfolio-block{
-        width: 33%;
+        width: 32%;
     }
 
 }
