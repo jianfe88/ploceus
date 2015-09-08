@@ -1,15 +1,20 @@
-/*Nuevo diseño*/
+/*Maquetado area de portafolio*/
 .portfolio h2{
     margin-bottom: .5rem;
 }
+
 .portfolio-wrapper{
     display: flex;
-    align-items:flex-start;
+    flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
     margin: 0 auto;
+    padding: 0;
 }
+
 .portfolio-block{
+    display: inline-block;
+    margin-bottom: .5rem;
     position:relative;
     width: 100%;
     padding: 2%;
@@ -21,6 +26,7 @@
     margin: 0;
     max-width: 100%;
     width: 100%;
+
 }
 
 
@@ -68,7 +74,6 @@
 }
 
 
-
 /*Media Querys********************/
 /*===============================*/
 @media (min-width: 475px){
@@ -77,13 +82,14 @@
 
 @media (min-width: 650px){
 	.portfolio-block{
-        width: 50%;
+        width: 49%;
+
     }
 }
 
 @media (min-width: 1020px){
     .portfolio-block{
-        width: 30%;
+        width: 32%;
     }
 
 }

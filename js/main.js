@@ -23,6 +23,9 @@ function scrollToSection () {
         // var offset = -91;
         $.scrollTo( $this.attr('href') , 0, { easing: 'swing' , offset: offset , 'axis':'y' } );
         event.preventDefault();
+        
+        $this.parent().addClass( "active" );
+        $this.parent().siblings().removeClass("active");
     });
 };
 

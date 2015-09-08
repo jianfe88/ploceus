@@ -8,20 +8,84 @@
 	text-align: center;
 }
 .contact-list li{
+	display:inline-block;
 	text-align: center;
+	width: 50%;
 }
 .contact-list img{
-	width:80%;
-	min-width: 250px;
 	height: auto;
+	width: 100%
+}
+/*Campanilla de contacto
+========================*/
+a.bell {
+  background: #CC3300 url(../../img/bell.png) no-repeat center;
+  background-size: 40px 40px;
+  bottom: 0;
+  display: block;
+  height: 55px;
+  margin-bottom: -1px;
+  outline: none;
+  position: fixed;
+  right: 40%;/*Dispositivos que no reconocen calc()*/
+  right: calc(50vw - 27px);
+  width: 55px;
+  z-index: 16;
 }
 
+a.bell span {
+  background: #393E54;
+  bottom: 100%;
+  color: #FFF;
+  font-size: 24px;
+  left: 50%;
+  line-height: 1em;
+  margin-bottom: 20px;
+  margin-left: -86px;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  visibility: hidden;
+  width: 172px;
+  z-index: 10;
+}
+
+a.bell span:before {
+  border-color: #393E54 transparent transparent transparent;
+  border-style: solid;
+  border-width: 12px 7px 0 7px;
+  content: '';
+  height: 0;
+  left: 50%;
+  margin-left: -7px;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  z-index: 2;
+}
+
+a.bell:hover span{
+	animation-name:slideUp;     
+	-webkit-animation-name:slideUp2;     
+	animation-duration: .5s;     
+	-webkit-animation-duration: .5s;     
+	animation-timing-function:ease;     
+	-webkit-animation-timing-function:ease;     
+	visibility:visible !important
+}
+
+@keyframes slideUp{
+	0%{transform:translateY(90%); opacity:0.2}
+	100%{transform:translateY(0%); opacity:1}}
+	@-webkit-keyframes slideUp2{
+	0%{-webkit-transform:translateY(90%); opacity:0.2}
+	100%{-webkit-transform:translateY(0%); opacity:1}
+}
 
 @media (min-width: 650px) {
 	.contact-list li{
-		display:inline-block;
 		width: 50%;
-		/*max-width: 500px;*/
 	}
 
 }
