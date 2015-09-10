@@ -1,8 +1,8 @@
 .learning{
-	/*background-color: #fff;*/
-	/*padding-top: 20px;*/
+	
 }
-.wrapper-learning{
+
+.learning-list{
 	display: flex;
 	flex-direction:row;
 	flex-wrap:wrap;
@@ -12,14 +12,26 @@
 
 .learning-item{
 	align-self:flex-start;
+	border-radius: 10px;
 	display: inline-block;
 	flex-grow:1;
+	margin-top: .5rem;
 	padding: 1rem 0;
 	text-align: center;
 	vertical-align: top;
 	width: 49%;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
 }
 
+.learning-item:hover{
+	background-color: #393E54;
+	text-shadow: 0px 0px 15px #FF0;
+}
+
+.learning-item:hover p{
+	color: yellow;
+}
  
 /*Media Querys********************/
 /*===============================*/

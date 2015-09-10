@@ -2,12 +2,7 @@
 /*skills (Tecnologías y herramientas)*/
 /********************************************/
 .skills{
-	/*background-color: #C2FFE3; */
-	/*padding-top: 20px;*/
 	padding-bottom: 20px;
-}
-.skills h2{
-	/*padding-top: 20px;*/
 }
 .skills ul{
 	display: flex;
@@ -18,7 +13,6 @@
 }	
 
 .skills li{
-	/*background-color: red;*/
 	display: inline-block;
 	flex-grown:1;
 	height: auto;
@@ -66,22 +60,12 @@ progress::-moz-progress-bar { background: #1BFF8A; }
 progress::-webkit-progress-bar { background: #098C75; }
 progress::-webkit-progress-value { background: #0ee018; }
 
-
-
 /*Media Querys********************/
 /*===============================*/
-@media (min-width: 939px){
-
-}
-
 @media (min-width: 1020px){
 	.skills li{
 		width: 16.2%;
 		padding: 3%;
 	}
-}
-
-@media (min-width: 1200px){
-
 }
 

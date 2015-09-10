@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Ploceus Maquetación Web</title>
-        <meta name="description" content="Maquetación Web a cargo de la BestiaWeb, mi nombre de guerra como desarrollador web freelance.">
+        <meta name="description" content="Maquetación Web a cargo de Ploceus, mi nombre de guerra como desarrollador web freelance.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -43,18 +43,18 @@
                     </ul>
                 </nav>
             </header>
-            <a href="mailto:jianfe66@gmail.com" class="bell"><span class="slideUp">Envia una propuesta</span></a>
+            <!-- Este enlace es el del timbre que abria el formulario de contacto -->
+            <!-- <a href="mailto:ploceusweb@gmail.com" class="bell"><span class="slideUp">Envia una propuesta</span></a> -->
         <!-- Fin del header -->
 
+     
     <div id="container">
-
         <!-- Comienza la valla publicitaria -->
             <div id="hoarding" class="wrapper hoarding">
                 <h1 id="inicio-title">Maquetación Web</h1>
                 <h2 id="inicio-subtitle" class="inicio-subtitle">semántica, optimizada, standard, adaptable y accesible.</h2>
             </div>
         <!-- Fin de la valla publicitaria -->
-
         <!-- Comienza el area de tecnologías -->
             <div id="skills" class="wrapper skills">
                 <h2 id="skills-header" class="section-title">COSAS QUE SE </h2>
@@ -122,38 +122,24 @@
                 </ul>
             </div>
         <!-- Fin de tecnologías      -->
-
-
         <!-- Comienza portfolio -->
             <div id="portfolio" class="wrapper portfolio">
                 <h2 id="portfolio-header" class="section-title">COSAS QUE HAGO </h2>
                 <section class="portfolio-wrapper">
-                    <!-- Sfotipy -->
-                  <arcticle class="portfolio-block">
-                    <div class="portfolio-holder">
-                      <img src="img/sfotipy.png" height="180" width="280" alt="Sfotipy">
-                    </div>
-                    <a href="http://goo.gl/YgOR5n" class="portfolio-hover">
-                      <div class="portfolio-info">
-                          <h3 class="portfolio-title">Sfotipy</h3>
-                          <p class="portfolio-description">Maquetado Html5 y CSS con Responsive Web Desig y Mobile First.</p>
-                      </div>
-                    </a>
-                  </arcticle>
-                  <!-- Foto Oscar Antón -->
-                  <arcticle class="portfolio-block">
-                      <div class="portfolio-holder">
-                          <img src="img/foto-oscar.png" alt="Web del Fotografo Oscar Antón" width="280" height="180">
-                      </div>
-                      <a href="https://fotoscaranton.wordpress.com" class="portfolio-hover">
-                          <div class="portfolio-info">
-                              <h3 class="portfolio-title">Fotografía Oscar Antón</h3>
-                              <p class="portfolio-description">Web para fotografía construida con wordpress.</p>
+                    <!-- Foto Oscar Antón -->
+                    <arcticle class="portfolio-item">
+                          <div class="portfolio-holder">
+                              <img src="img/foto-oscar.png" alt="Web del Fotografo Oscar Antón" width="280" height="180">
                           </div>
-                      </a>
-                  </arcticle>
-                        <!-- CSS Zen Garden -->
-                        <arcticle class="portfolio-block">
+                          <a href="https://fotoscaranton.wordpress.com" class="portfolio-hover">
+                              <div class="portfolio-info">
+                                  <h3 class="portfolio-title">Fotografía Oscar Antón</h3>
+                                  <p class="portfolio-description">Web para fotografía construida con wordpress.</p>
+                              </div>
+                          </a>
+                      </arcticle>
+                    <!-- CSS Zen Garden -->
+                    <arcticle class="portfolio-item">
                         <div class="portfolio-holder">
                           <img src="img/css-zen-garden.png" height="180" width="280" alt="css zen garden">
                         </div>
@@ -164,8 +150,22 @@
                     </div>
                         </a>
                         </arcticle>
+
+                    <!-- Sfotipy -->
+                    <arcticle class="portfolio-item">
+                        <div class="portfolio-holder">
+                          <img src="img/sfotipy.png" height="180" width="280" alt="Sfotipy">
+                        </div>
+                        <a href="http://goo.gl/YgOR5n" class="portfolio-hover">
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Sfotipy</h3>
+                                <p class="portfolio-description">Maquetado Html5 y CSS con Responsive Web Desig y Mobile First.</p>
+                             </div>
+                        </a>
+                    </arcticle>
+              
                   <!-- La Oca -->
-                        <arcticle class="portfolio-block">
+                        <arcticle class="portfolio-item">
                         <div class="portfolio-holder">
                           <img src="img/juego-oca.png" height="180" width="280" alt="El juego de la Oca">
                         </div>
@@ -177,7 +177,7 @@
                         </a>
                         </arcticle>
                   <!-- El Ahorcado -->
-                        <arcticle class="portfolio-block">
+                        <arcticle class="portfolio-item">
                         <div class="portfolio-holder">
                           <img src="img/juego-ahorcado.png" height="180" width="280" alt="El juego del ahorcado">
                         </div>
@@ -189,7 +189,7 @@
                         </a>
                         </arcticle>
                   <!-- Es Maculli -->
-                        <arcticle class="portfolio-block">
+                        <arcticle class="portfolio-item">
                         <div class="portfolio-holder">
                           <img src="img/esmaculli.png" alt="Granja de caracoles el Maculli" width="280" height="180">
                         </div>
@@ -203,11 +203,10 @@
                 </section>
             </div>
         <!-- Fin del portfolio -->
-
         <!-- Comienza el area de Cursos -->
             <div id="learning" class="wrapper learning">
             <h2 id="formacion-header" class="section-title">COSAS QUE APRENDO</h2>
-            <ul class="wrapper-learning">
+            <ul class="learning-list">
                 <li class="learning-item">
                     <a href="https://platzi.com/cursos/desarrollo-web/" target="_blank">
                         <img src="img/desarrollo-web2x.png" height="80" width="80" alt="Desarrollo Web (Platzi)" title="Web del curso">
@@ -307,37 +306,44 @@
             </ul>
           </div>
         <!-- Fin Cursos  -->
-
         <!-- Comienza el area de  Contacto -->
             <div id="contact" class="wrapper contact">
-                    <h2 id="contacto-header" class="section-title">ENCONTRARME ES FACIL</h2>
-                    <ul id="contact-list" class="contact-list">
-                         <li id="contact-email" class="contact-email">
-                            <a href="mailto:jianfe66@gmail.com">
-                                <figure >
-                                    <img src="img/contact-email.png" alt="Teléfono de Contacto">
-                                </figure>
-                            </a>
-                        </li><!--
-                        --><li id="contact-phone" class="contact-phone">
-                            <figure>
-                                <img src="img/contact-phone.png" alt="Teléfono de Contacto">
-                            </figure>
-                        </li> 
-                    </ul>
+                <h2 id="contacto-header" class="section-title">ENCONTRARME ES FACIL</h2>
+                <div id="contact-body" class="contact-body">
                     
+                    <ul id="contact-list" class="contact-list">
+                        <li id="contact-email" class="contact-email">
+                            <p class="title" >Mail</p>
+                            <a href="mailto:info@ploceus.es" class="link">info@ploceus.es</a>
+                        </li><!--
+                        --><li id="contact-twitter" class="contact-twitter">
+                            <p class="title">Twitter</p>
+                            <a href="https://twitter.com/_ploceus" class="link">@_ploceus</a>
+                        </li><!--
+                        --><li id="contact-skype" class="contact-skype">
+                            <p class="title">Skype</p>
+                            <a href="skype:ploceus?call" class="link">ploceus</a>   
 
-            </div>
+                        </li>
+                    </ul>
+                    <div id="wrapper-message" class="wrapper-message">
+                        <p id="contact-message" class="contact-message">Si te agrada lo que ves, dame un toque.</p>                   
+                        <p id="contact-message" class="contact-message">Si sabes como mejorarlo y me lo dices, te pago un café.</p>
+                    </div>                    
+                </div>
+                <!-- <p class="bird-info">Ploceus is a genus of birds in the weaver family Ploceidae.</p> -->
+                <!-- <p class="bird-info">Ploceus es un género de aves paseriformes de la familia Ploceidae.</p> -->
+            <footer>
+                <div class="rights">
+                    <h3>Copyright</h3>
+                    <p>(C) Septiembre 2015<br>Hecho con <span class="heart">♥</span> por Ploceus</p>
+                </div>
+                <!-- <div class="mention">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div> -->
+            </footer>
+            </div>    
         <!-- Fin de contactos -->
-            
-    </div>
-
-    <footer>
-        <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-
-        
-    </footer>
-
+    </div> 
+ 
     <!-- Aqui JavaScripts para que no moleste en la carga  ...
     ================================================== -->
 
@@ -355,5 +361,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
     </body>
 </html>

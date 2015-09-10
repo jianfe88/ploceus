@@ -12,7 +12,7 @@
     padding: 0;
 }
 
-.portfolio-block{
+.portfolio-item{
     display: inline-block;
     margin-bottom: .5rem;
     position:relative;
@@ -26,12 +26,11 @@
     margin: 0;
     max-width: 100%;
     width: 100%;
-
 }
-
 
 .portfolio-hover{
     background: #393E54;
+    border-radius: 15px;
     bottom: 0;
     cursor: pointer;
     display: block;
@@ -42,8 +41,6 @@
     text-align: center;
     top: 0;
     z-index: 5;
-
-    border-radius: 15px;
     -webkit-transition: opacity 1.5s ease;
     transition: opacity 1.5s ease;
 }
@@ -76,21 +73,14 @@
 
 /*Media Querys********************/
 /*===============================*/
-@media (min-width: 475px){
-	
-}
-
 @media (min-width: 650px){
-	.portfolio-block{
+	.portfolio-item{
         width: 49%;
-
     }
 }
 
 @media (min-width: 1020px){
-    .portfolio-block{
+    .portfolio-item{
         width: 32%;
     }
-
 }
-

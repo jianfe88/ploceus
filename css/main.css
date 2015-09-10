@@ -7,6 +7,7 @@
 @import url(./css-modulos/learning.css);
 @import url(./css-modulos/contact.css);
 @import url(./css-modulos/footer.css);
+@import url(./css-modulos/bell.css);
 
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -142,15 +143,7 @@ h2 {
     font-family: robotothin, sans-serif;
     font-size: 1.6rem;
   }
-/*Titulos para las secciones  */
-.section-title{
-    background-color: #393E54;
-    color:#ff0;
-    padding: 10px 5%;
-    text-shadow: -1px -2px 1px #000000;
-    text-transform: uppercase;
-    
-}
+
  
 h3{
     font-size: 1.2rem;
@@ -160,73 +153,35 @@ h3{
 }
 
 a {
-
-    /*color: #fff;*/
     text-decoration: none;
 }
 
-a:hover{
-    /*color: #1BFF8A;*/
-}
 
 ul{
     list-style: none;
 }
+/*Contenedor general*/
+#container{
+    position:relative;
+    width: 100%;
+}
+
+/*Contenedor de cada sección*/
 .wrapper{
     margin: 0 auto;
     width: 100%;
     padding-bottom: 60px;
 }
 
-
-
-@media (min-width: 320px){
+/*Titulos para las secciones  */
+.section-title{
+    background-color: #393E54;
+    color:#ff0;
+    padding: 10px 5%;
+    text-shadow: -1px -2px 1px #000000;
+    text-transform: uppercase;
     
 }
-
-@media (min-width: 475px){
-    
-}
-
-@media (min-width: 750px){
-    html{
-        font-size: 19px;
-    }
-}
-
-@media (min-width: 939px){
-    html{
-        font-size: 22px;
-    }
-    .wrapper{
-        min-height: calc(100vh - 82px);
-    }   
-}
-
-@media (min-width: 1020px){
-}   
-
-@media (min-width: 1200px){
-    html{
-        font-family: robotothin;
-        font-size: 27px;
-    }
-    .wrapper{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
-
-@media (min-width: 1400px){
-    html{
-        /*font-size: 30px; */
-    }
-    
-}
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -308,8 +263,31 @@ ul{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+
+@media (min-width: 750px){
+    html{
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 939px){
+    html{
+        font-size: 22px;
+    }
+    .wrapper{
+        min-height: calc(100vh - 82px);
+    }   
+}
+
+@media (min-width: 1200px){
+    html{
+        font-family: robotothin;
+        font-size: 27px;
+    }
+    .wrapper{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 @media print,
