@@ -3,4 +3,8 @@
 __taller-store/
 doc/
 prepros.cfg
+/css/css-modulos/
+/css/main.css
+/node_modules/
+package.json
 
