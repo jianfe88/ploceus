@@ -988,12 +988,12 @@ header {
 	display: flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	justify-content:center;
+	justify-content:space-between;
+	align-items: stretch;
 	padding: 0;
 }
 
 .learning-item{
-	align-self:flex-start;
 	border-radius: 10px;
 	display: inline-block;
 	flex-grow:1;
@@ -1002,8 +1002,9 @@ header {
 	text-align: center;
 	vertical-align: top;
 	width: 49%;
-	-webkit-transition: all 0.7s;
-	transition: all 0.7s;
+	-webkit-transition: all 1.5s;
+	transition: all 1.5s;
+
 }
 
 .learning-item:hover{
@@ -1036,6 +1037,10 @@ header {
 @media (min-width: 1020px){
 	.learning-item{
 		width: 16.2%;
+	}
+@media (min-width: 1200px){
+	.learning-item{
+		font-size: 25px;
 	}
 	
 }

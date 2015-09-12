@@ -28,8 +28,7 @@ module.exports = function (grunt) {
     // Where we tell Grunt we plan to use some plug-ins.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
- 		grunt.loadNpmTasks('grunt-contrib-uglify');
 
     // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['concat', 'cssmin']);
 };

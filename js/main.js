@@ -21,7 +21,7 @@ function scrollToSection () {
     $('#menu a[href*=#]').click( function(event) {
         var $this = $(this);
         // var offset = -91;
-        $.scrollTo( $this.attr('href') , 0, { easing: 'swing' , offset: offset , 'axis':'y' } );
+        $.scrollTo( $this.attr('href') , 1500, { easing: 'swing' , offset: offset , 'axis':'y' } );
         event.preventDefault();
         
         $this.parent().addClass( "active" );
