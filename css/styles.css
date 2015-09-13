@@ -1016,6 +1016,7 @@ progress::-webkit-progress-value { background: #0ee018; }
 	.learning-item{
 		width: 16.2%;
 	}
+}
 @media (min-width: 1200px){
 	.learning-item{
 		font-size: 25px;
