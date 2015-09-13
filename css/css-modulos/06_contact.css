@@ -1,0 +1,88 @@
+/* Hoja de estilos del area de contacto*/
+.contact{
+	background-color: #393E54;
+  position: relative;
+}
+  
+.contact-body{
+
+}
+/*Lista enlaces de contacto*/
+.contact-list{
+  font-family: robotoregular, sans-serif;
+  padding-bottom: 2rem;
+}
+.contact-list li{
+  margin-bottom: .5em;
+  padding: .8em;
+
+}
+.contact-list .title {
+    font-size: 1rem;
+    line-height: 20px;
+    color: #dce0df;
+    opacity: .4;
+}
+
+.contact-list .link {
+    color: #dce0df;
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-top: 20px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+.contact-list .link:hover {
+    color: #FF0;
+    text-shadow: 0px 0px 15px #FF0;
+}
+
+/*Mensaje de contacto*/
+.wrapper-message{
+  padding: .8em;
+}
+
+.contact-message{
+  color: #dce0df;
+  font-family: robotoregular;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-message::first-letter{
+  font-size: 3rem;
+  color: #f00;
+}
+
+@media (min-width: 650px) {
+  .contact-body{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+  .wrapper-message{
+    order: 1;
+    width: 45%;
+  }
+  .contact-message{
+    font-size: 1.4rem;
+  }
+
+  .contact-list{
+    order: 2;
+    width: 45%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #contact{
+    width: 90%;
+  }
+
+  #contacto-header{
+    padding-left: 0;
+  }
+}

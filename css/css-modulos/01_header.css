@@ -1,0 +1,142 @@
+/*Barra de navegación superior*/
+.active{
+	background-color: #393E54;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+/*Logo de la barra superior*/
+.logo-wrapper{
+	display: block;
+	height: 60px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 110;
+}
+
+.logo-img{
+	height: 60px;
+}
+/*final logo en la barra de menú superior*/
+
+/*barra menú en mobil*/
+.menu_bar {
+	background: #c30;
+	display: block;
+	position: fixed;
+	width: 100%;
+}
+
+.menu_bar .bt-menu {
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+/*icono para mostrar/ocultar menú*/
+.menu_bar span {
+	float: right;
+	font-size: 40px;
+	padding: 10px;
+	font-weight: bold;
+}
+/*final barra menú en mobil*/
+
+
+/*Munú principal*/
+/*barra del menú*/
+.nav-superior {
+	background-color: #c30;
+	display:block;
+	height: 100%;
+	height: 1500px;/*Ipad 1 no renderiza el height:100%*/
+	margin: 0;
+	position: fixed;
+	right:-100%;
+	top:60px; /*Alto del menu_bar*/
+	width: 250px;
+	z-index:105;
+}
+
+.nav-superior li {
+	display: block;
+	border-bottom:1px solid rgba(255,255,255,.5);
+}
+
+.nav-superior li:hover {
+	background-color: #393E54;
+}
+	 
+.nav-superior a {
+	color: #fff;
+	display: block;
+	padding: 1rem;
+}
+
+.nav-superior a:hover{
+	color: yellow;
+	text-shadow: 0px 0px 15px #FF0;
+}
+
+@media (min-width: 939px){
+	.menu_bar {
+		display:none;
+	}
+
+	.logo-wrapper{
+		margin-top: 15px;
+		height: 67px;
+	}
+
+	.logo-img{
+    height: 76px;
+	}
+	.nav-superior {
+		display: inline-block;
+		height: 76px;
+		left: 0;
+		margin:0 auto;
+		right: 0;
+		text-align: right;
+		top: 15px;
+		width:100%;
+	}
+ 
+	.nav-superior ul {
+		display: inline-block;
+		margin: 0;
+
+	}
+ 
+	.nav-superior li {
+		border:none;
+		display:inline-block;
+		height: 76px;
+		padding: 0;
+		margin: 0;
+		position: relative;
+	}
+	
+	.nav-superior a {
+		padding: 22px 15px;
+	}
+}
+
+@media (min-width: 1200px){
+	.logo-wrapper{
+		margin-left: 5%;
+	}	
+	.logo-img{
+		height: 76px;
+	}
+	.nav-superior{
+		max-width: 90%;
+	}
+}
