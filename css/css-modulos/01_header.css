@@ -31,6 +31,8 @@ header {
 	display: block;
 	position: fixed;
 	width: 100%;
+
+	height: 60px;
 }
 
 .menu_bar .bt-menu {

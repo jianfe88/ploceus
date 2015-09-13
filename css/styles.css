@@ -422,6 +422,92 @@ ul{
     font-style: normal;
 
 }
+@font-face {
+	font-family: 'icomoon';
+	src:url('../font/icomoon.eot?n6x9fm');
+	src:url('../font/icomoon.eot?#iefixn6x9fm') format('embedded-opentype'),
+		url('../font/icomoon.ttf?n6x9fm') format('truetype'),
+		url('../font/icomoon.woff?n6x9fm') format('woff'),
+		url('../font/icomoon.svg?n6x9fm#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e600";
+}
+.icon-menu2:before {
+	content: "\e601";
+}
+.icon-menu3:before {
+	content: "\e602";
+}
+.icon-menu4:before {
+	content: "\e603";
+}
+.icon-mail:before {
+	content: "\e604";
+}
+.icon-mail2:before {
+	content: "\e605";
+}
+.icon-mail3:before {
+	content: "\e606";
+}
+.icon-mail4:before {
+	content: "\e607";
+}
+.icon-twitter:before {
+	content: "\e608";
+}
+.icon-github:before {
+	content: "\e609";
+}
+.icon-wordpress:before {
+	content: "\e60a";
+}
+.icon-wordpress2:before {
+	content: "\e60b";
+}
+.icon-joomla:before {
+	content: "\e60c";
+}
+.icon-blogger2:before {
+	content: "\e60d";
+}
+.icon-skype:before {
+	content: "\e60e";
+}
+.icon-html5:before {
+	content: "\e60f";
+}
+.icon-html52:before {
+	content: "\e610";
+}
+.icon-css3:before {
+	content: "\e611";
+}
+.icon-git:before {
+	content: "\e612";
+}
+.icon-codepen:before {
+	content: "\e613";
+}
+
 /*Barra de navegación superior*/
 .active{
 	background-color: #393E54;
@@ -455,6 +541,8 @@ header {
 	display: block;
 	position: fixed;
 	width: 100%;
+
+	height: 60px;
 }
 
 .menu_bar .bt-menu {
@@ -932,9 +1020,9 @@ progress::-webkit-progress-value { background: #0ee018; }
 	.learning-item{
 		font-size: 25px;
 	}
+	
 }
-  
-
+/* Hoja de estilos del area de contacto*/
 .contact{
 	background-color: #393E54;
   position: relative;
@@ -1112,89 +1200,3 @@ a.bell:hover span{
 }
 /*Fin de timbre*/
 
-
-@font-face {
-	font-family: 'icomoon';
-	src:url('../font/icomoon.eot?n6x9fm');
-	src:url('../font/icomoon.eot?#iefixn6x9fm') format('embedded-opentype'),
-		url('../font/icomoon.ttf?n6x9fm') format('truetype'),
-		url('../font/icomoon.woff?n6x9fm') format('woff'),
-		url('../font/icomoon.svg?n6x9fm#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu:before {
-	content: "\e600";
-}
-.icon-menu2:before {
-	content: "\e601";
-}
-.icon-menu3:before {
-	content: "\e602";
-}
-.icon-menu4:before {
-	content: "\e603";
-}
-.icon-mail:before {
-	content: "\e604";
-}
-.icon-mail2:before {
-	content: "\e605";
-}
-.icon-mail3:before {
-	content: "\e606";
-}
-.icon-mail4:before {
-	content: "\e607";
-}
-.icon-twitter:before {
-	content: "\e608";
-}
-.icon-github:before {
-	content: "\e609";
-}
-.icon-wordpress:before {
-	content: "\e60a";
-}
-.icon-wordpress2:before {
-	content: "\e60b";
-}
-.icon-joomla:before {
-	content: "\e60c";
-}
-.icon-blogger2:before {
-	content: "\e60d";
-}
-.icon-skype:before {
-	content: "\e60e";
-}
-.icon-html5:before {
-	content: "\e60f";
-}
-.icon-html52:before {
-	content: "\e610";
-}
-.icon-css3:before {
-	content: "\e611";
-}
-.icon-git:before {
-	content: "\e612";
-}
-.icon-codepen:before {
-	content: "\e613";
-}
